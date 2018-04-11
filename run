@@ -1,0 +1,22 @@
+#!/bin/bash
+set -e
+
+urls=(
+    "/"
+    "/funding"
+    "/funding/under10k"
+    "/funding/over10k"
+    "/funding/programmes"
+    "/funding/programmes/reaching-communities-england"
+    "/funding/programmes/national-lottery-awards-for-all-england"
+    "/research"
+    "/about"
+    "/apply/your-idea"
+    "/apply/your-idea/1"
+)
+
+# domain="http://localhost:3000"
+domain="https://www.biglotteryfund.org.uk"
+urls_list=$(printf "${domain}%s " "${urls[@]}")
+
+./node_modules/.bin/axe --disable color-contrast --exclude iframe --exit $urls_list
