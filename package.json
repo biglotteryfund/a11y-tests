@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/axe --disable color-contrast --exclude iframe --exit https://www.biglotteryfund.org.uk/funding"
+    "test": "./run"
   },
   "dependencies": {
     "axe-cli": "^3.0.0"
