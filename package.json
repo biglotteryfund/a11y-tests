@@ -5,10 +5,9 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test":
-      "axe --disable color-contrast --exclude iframe --exit https://www.biglotteryfund.org.uk/ https://www.biglotteryfund.org.uk/funding https://www.biglotteryfund.org.uk/research https://www.biglotteryfund.org.uk/about https://www.biglotteryfund.org.uk/funding/programmes https://www.biglotteryfund.org.uk/funding/programmes/reaching-communities-england"
+    "test": "./run"
   },
   "dependencies": {
-    "axe-cli": "^1.3.1"
+    "axe-cli": "^3.0.0"
   }
 }
