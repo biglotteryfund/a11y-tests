@@ -15,8 +15,7 @@ urls=(
     "/apply/your-idea/1"
 )
 
-# domain="http://localhost:3000"
-domain="https://www.biglotteryfund.org.uk"
+domain=${1:-https://www.biglotteryfund.org.uk}
 urls_list=$(printf "${domain}%s " "${urls[@]}")
 
 ./node_modules/.bin/axe --disable color-contrast --exclude iframe --exit $urls_list
